@@ -1,0 +1,120 @@
+/**
+ * Extensions to Reveal JS
+ *
+ * Copyright (C) 2016  Armin Steinhauser
+ */
+
+/* Separate css file for MECO presentation specific styles */
+
+/* Font definition: Define the font that should be used in SVGs (aka 'svgfont') */
+@font-face {
+  font-family: 'svgfont';
+  src: url('../fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+}
+
+body {
+  background: #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+.plain-slide #bar,
+.plain-slide #logo-container,
+.plain-slide .slide-number,
+.plain-slide .controls,
+.plain-slide .progress {
+	opacity: 0.0;
+}
+
+#logo-container {
+  position: absolute;
+  height: 6%;
+  top: 91.5%;
+  right: 4%;
+  bottom: 2.5%;
+  left: 0%;
+  background-image: url('../../kul-theme/meco_kuleuven.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.reveal .slide-number {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  position: absolute;
+  display: block;
+  right: 50%;
+  bottom: 1%;
+  padding: 0px;
+  z-index: 31;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+ /*reset img properties */
+.reveal .slides img {
+  /*width: 100%;*/
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* clean headings implementation */
+.reveal h1 {
+  color: rgba( 17, 110, 138, 1.0);
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+
+  font-weight: bold;
+
+  padding: 10px 20px;
+  <!--text-shadow: 2px 2px #1d8db0;-->
+}
+.reveal h1.box_header {
+  background: rgba(255,255,255,0.6);
+}
+.reveal h2 {
+  color: #000;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 5px 0px 15px 0px;
+}
+
+/* listings style */
+.reveal .slides section ul {
+  margin-left: 2em;
+}
+
+.reveal .slides section ul.stretched li {
+  margin-bottom: 1em;
+}
+
+/* class for icons background (slide 4) to not crash the bottom bar */
+html.icon-bg div.slide-background.present {
+  left: 85%;
+  width: 15%;
+  height: 85%;
+  background-size: contain;
+  background-position: center right;
+}
+
+/* class for overview slide container */
+.reveal .slides section img.overview {
+  width: 90%;
+  margin: 0% 5%;
+}
+
+/* class for equation box with rounded corners */
+.reveal .slides section .eq-box {
+  background-color: rgba(0, 64, 122, 0.2);
+  border-style: solid;
+  border-width: 3px;
+  border-color: #00407a;
+  border-radius: 25px;
+  width: 80%;
+  margin: auto;
+  padding: 30px 0px;
+}

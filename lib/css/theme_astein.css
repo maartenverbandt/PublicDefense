@@ -1,0 +1,552 @@
+/**
+ * Light reveal theme with the colours of the KUL.
+ */
+
+/*@import url("include_fonts.css");*/
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+body {
+  background: #fff;
+  background-color: #fff;
+  position: relative;
+}
+
+.reveal {
+  font-family: "DroidSans", "Open-Sans", "Raleway", sans-serif;
+  /*font-size: 25px;*/
+  font-weight: normal;
+  color: #222;
+}
+
+::selection {
+  color: #fff;
+  background: #98bdef;
+  text-shadow: none;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal .title {
+  margin: 0 0 30px 0;
+  /*color: rgba(  0,  64, 122, 1.0);*/
+  font-family: "Raleway";
+  /*font-weight: 600;*/
+  /*font-weight: bold;*/
+  line-height: 1.2;
+  letter-spacing: normal;
+  /*text-transform: uppercase;*/
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+.reveal h1 {
+  font-size: 1.6em;
+}
+
+.reveal h2 {
+  font-size: 1.3em;
+}
+
+.reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  font-size: 1.0em;
+}
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3;
+}
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  /*max-width: 95%;
+  max-height: 95%;*/
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 1em 0 0 3em;
+}
+
+.reveal li {
+  margin: 0 0 1em 0;
+}
+
+.reveal ol {
+  list-style-type: upper-roman;
+}
+
+.reveal ul {
+  list-style-type: disc;
+}
+
+.reveal ul ul {
+  list-style-type: square;
+}
+
+.reveal ul ul ul {
+  list-style-type: circle;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+.reveal dt {
+  font-weight: bold;
+}
+
+.reveal dd {
+  margin-left: 40px;
+}
+
+.reveal q,
+.reveal blockquote {
+  quotes: none;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+.reveal q {
+  font-style: italic;
+}
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: bold;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 5px 50px 5px 50px; /* 0.2em 0.5em 0.2em 0.5em;*/
+  border-bottom: 1px solid;
+}
+
+.noborder table th,
+.noborder table td {
+  text-align: left;
+  padding: 0px 0px 0px 0px; /* 0.2em 0.5em 0.2em 0.5em;*/
+  border-bottom: none; /*1px solid;*/
+}
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right;
+}
+
+.reveal table tr:last-child td {
+  border-bottom: none;
+}
+
+.reveal sup {
+  vertical-align: super;
+}
+
+.reveal sub {
+  vertical-align: sub;
+}
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+.reveal small * {
+  vertical-align: top;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: #2a76dd;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+
+.reveal a:hover {
+  color: #6ca0e8;
+  text-shadow: none;
+  border: none;
+}
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #1a53a1;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 0px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 0px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal a img {
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #2a76dd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls {
+	opacity: 1;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  bottom: 0px;
+  /*background-color: #456;*/
+}
+
+.reveal .controls button {
+  border: 8px solid transparent;
+  opacity: 0.3;
+}
+.reveal .controls .enabled:active {
+  margin-top: 0px;
+}
+
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  top: 12px;
+  right: 28px;
+  border-right-width: 12px;
+  border-right-color: #2a76dd;
+}
+
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  left: 28px;
+  top: 12px;
+  border-left-width: 12px;
+  border-left-color: #2a76dd;
+}
+
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  left: 12px;
+  bottom: 28px;
+  border-bottom-width: 12px;
+  border-bottom-color: #2a76dd;
+  opacity: 0;
+}
+
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  left: 12px;
+  top: 28px;
+  border-top-width: 12px;
+  border-top-color: #2a76dd;
+  opacity: 0;
+}
+
+.reveal .controls .navigate-left.enabled:hover {
+  border-right-color: #6ca0e8;
+}
+
+.reveal .controls .navigate-right.enabled:hover {
+  border-left-color: #6ca0e8;
+}
+
+.reveal .controls .navigate-up.enabled:hover {
+  border-bottom-color: #6ca0e8;
+}
+
+.reveal .controls .navigate-down.enabled:hover {
+  border-top-color: #6ca0e8;
+}
+.reveal .controls .navigate-up.fragmented, .navigate-down.fragmented, .navigate-left.fragmented, .navigate-right.fragmented  {
+  opacity: 0.5;
+}
+
+.reveal .slide-number {
+	opacity: 1;
+  right: 22px;
+  /*right: 12px; for decktape */
+  bottom: 12px;
+  width: 16px;
+  height: 10px;
+  color: #000;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 3px 0px;
+  margin: 0px;
+  text-align: center;
+  background-color: inherit;
+  /*background-color: #765;*/
+  display: none;
+}
+
+#logos-bottom {
+  position: absolute;
+  width: 100%;
+  height: 5%;
+  bottom: 6px;
+  left: 3px;
+  background-image: url('../../img/comb_logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  /*background-color: #000;*/
+}
+.plain-slide #logos-bottom,
+.plain-slide .slide-number,
+.plain-slide .controls {
+	opacity: 0.0;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.reveal .progress span {
+  background: #2a76dd;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/*********************************************
+ * TITLE SLIDE
+ *********************************************/
+.reveal .slides section .title {
+  text-align: center;
+  margin-top: 15%;
+  font-size: 2.0em;
+  font-weight: normal;
+}
+.reveal .slides section .author {
+  margin-top: 15%;
+  width: 100%;
+  text-align: center
+}
+.reveal .slides section .conference {
+  margin-top: 2%;
+  width: 100%;
+  text-align: center;
+  font-size: .75em;
+  font-style: italic;
+}
+.reveal .slides section .bad_joke {
+  /*font-family: "Roboto";*/
+  font-size: 1.0em;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-top: -20px;
+}
+
+.reveal .slides section .logo_container {
+  width: 70%;
+  margin: 10% 15% 0%;
+  height: 100px;
+  /*background-color: #456;*/
+  position: relative;
+}
+.reveal .slides section .logo_container .meco {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: auto;
+}
+.reveal .slides section .logo_container .kul {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: auto;
+}
+
+/*********************************************
+ * OTHER STYLES
+ *********************************************/
+.reveal .slides section .text-highlight {
+  /*color: rgba(  0,  64, 122, 1.0);*/
+  color: rgba( 29, 141, 176, 1.0);
+  font-weight: bold;
+}
+.reveal .slides section ul .narrow_ul {
+  margin-top: 10px;
+}
+.reveal .slides section ul .narrow_ul li {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.reveal .slides .overview .todo {
+  color: rgba(0, 0, 0, 0.5);
+}
+.reveal .slides .overview .done {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/*********************************************
+ * CODE SNIPPET
+ *********************************************/
+.reveal code {
+  font-family: "Anonymous-Pro";
+  counter-reset: line;
+  /*background-color: #fff;*/
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.5em;
+  font-family: monospace;
+  line-height: 0.8em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.reveal code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 600px;
+  word-wrap: normal;
+}
+
+.reveal code line {
+  display: block;
+  line-height: 1.2rem;
+}
+
+.reveal code line:before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  padding: 0 .5em;
+  margin-right: .5em;
+  color: #888;
+}
+
+.reveal code line tab {
+  width: 0;
+  height: 0;
+  padding-left: 4ch;
+}
+
+/*.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.reveal code {
+  font-family: monospace;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+}*/
+
+/*********************************************
+ * TYPEWRITER
+ *********************************************/
+.reveal .slides .typewriter {
+  font-family: "Special-Elite";
+}
