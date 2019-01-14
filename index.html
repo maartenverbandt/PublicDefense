@@ -8,10 +8,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="../tools/reveal/css/reveal.css">
+    <link rel="stylesheet" href="lib/tools/reveal/css/reveal.css">
     <link rel="stylesheet" href="lib/css/include_fonts.css" id="fonts">
     <link rel="stylesheet" href="kul-theme/kul.css" id="theme">
-    <link rel="stylesheet" href="../tools/reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="lib/tools/reveal/lib/css/zenburn.css">
     <link rel="stylesheet" href="lib/css/reveal_ext.css">
     <link rel="stylesheet" href="lib/css/meco_presentation.css">
     <link rel="stylesheet" href="lib/css/theme_astein.css">
@@ -936,8 +936,8 @@
     <div id="logo-container"></div>
 
     <!-- Reveal.js and Template Specific Options -->
-    <script src="../tools/reveal/lib/js/head.min.js"></script>
-    <script src="../tools/reveal/js/reveal.js"></script>
+    <script src="lib/tools/reveal/lib/js/head.min.js"></script>
+    <script src="lib/tools/reveal/js/reveal.js"></script>
     <script>
       Reveal.initialize({
         history: true,
@@ -948,17 +948,17 @@
         maxScale: 10.0,
 
         math: {
-          mathjax: '../tools/mathjax/MathJax.js',
+          mathjax: 'lib/tools/mathjax/MathJax.js',
           // config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
         },
 
         dependencies: [
-          { src: '../tools/reveal/lib/js/classList.js' },
-          { src: '../tools/reveal/plugin/math/math.js', async: true },
+          { src: 'lib/tools/reveal/lib/js/classList.js' },
+          { src: 'lib/tools/reveal/plugin/math/math.js', async: true },
           // { src: 'plugin/math-katex/math-katex.js', async: true },
-          { src: '../tools/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '../tools/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '../tools/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'lib/tools/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'lib/tools/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'lib/tools/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
         ]
       });
     </script>
